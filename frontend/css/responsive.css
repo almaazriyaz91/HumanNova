@@ -1,0 +1,105 @@
+/* ============================================================
+   HumanNova Responsive Stylesheets
+   ============================================================ */
+
+/* Tablet & Smaller Desktops */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .atlas-ai-sidebar {
+    width: 320px;
+  }
+
+  .anatomy-info-card {
+    left: 20px;
+    top: auto;
+    bottom: 80px;
+    width: 320px;
+    max-height: 45vh;
+  }
+
+  .models-split-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .landing-navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    display: none; /* Can toggle via mobile menu */
+  }
+
+  .hero-title {
+    font-size: 2.3rem;
+  }
+
+  .hero-section {
+    padding: 90px 20px 40px;
+  }
+
+  .features-section, .showcase-section, .structures-gallery-section {
+    padding: 60px 20px;
+  }
+
+  .atlas-header {
+    padding: 0 12px;
+  }
+
+  .search-wrapper {
+    display: none; /* Accessible via search button */
+  }
+
+  .atlas-brand-title {
+    display: none;
+  }
+
+  .layer-controls-panel {
+    top: 72px;
+    left: 10px;
+    width: 160px;
+    padding: 10px;
+  }
+
+  .anatomy-info-card {
+    left: 10px;
+    right: 10px;
+    width: auto;
+    bottom: 74px;
+    max-height: 40vh;
+  }
+
+  .atlas-ai-sidebar {
+    width: 100%;
+    top: 64px;
+  }
+
+  .atlas-bottom-toolbar {
+    bottom: 12px;
+    padding: 6px 10px;
+    gap: 4px;
+  }
+
+  .toolbar-btn span {
+    display: none;
+  }
+}

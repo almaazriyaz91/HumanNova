@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HumanNova — AI-Powered Interactive 3D Human Atlas Platform</title>
+  <meta name="description" content="Explore the male and female human anatomy in interactive 3D with OctSem AI. Interactive anatomical models for medical and healthcare students.">
+  <link rel="icon" type="image/png" href="./assets/logo/humannova_logo.png">
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="landing-navbar">
+    <a href="index.html" class="brand-container">
+      <img src="./assets/logo/humannova_logo.png" alt="HumanNova Official Logo" class="brand-logo-img">
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#features" class="nav-link">Platform Features</a></li>
+        <li><a href="#models" class="nav-link">Anatomical Models</a></li>
+        <li><a href="#gallery" class="nav-link">3D Organ Gallery</a></li>
+        <li><a href="#octsem" class="nav-link">OctSem AI</a></li>
+      </ul>
+    </nav>
+
+    <div style="display: flex; align-items: center; gap: 14px;">
+      <a href="atlas.html" class="btn btn-secondary"><i class="fa-solid fa-cube"></i> Quick Preview</a>
+      <a href="atlas.html" class="btn btn-primary"><i class="fa-solid fa-play"></i> Launch 3D Atlas</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="badge badge-blue"><i class="fa-solid fa-sparkles"></i> AI-Powered 3D Anatomy</span>
+          <span class="badge badge-purple">Medical Education Platform</span>
+        </div>
+
+        <h1 class="hero-title">
+          Explore the Human Body in 3D. <span class="gradient-text">Understand with OctSem AI.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          HumanNova bridges visual anatomy exploration and context-aware artificial intelligence.
+          Rotate, dissect, and isolate complete male and female 3D anatomical models across muscles, bones,
+          veins, and internal organs in real time.
+        </p>
+
+        <div class="hero-actions">
+          <a href="atlas.html" class="btn btn-primary" style="padding: 14px 28px; font-size: 1.05rem;">
+            <i class="fa-solid fa-compass"></i> Get Started — Launch Atlas
+          </a>
+          <a href="atlas.html?model=female" class="btn btn-secondary" style="padding: 14px 24px; font-size: 1.05rem;">
+            <i class="fa-solid fa-venus"></i> Female Atlas
+          </a>
+          <a href="atlas.html?model=male" class="btn btn-secondary" style="padding: 14px 24px; font-size: 1.05rem;">
+            <i class="fa-solid fa-mars"></i> Male Atlas
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h4>100% 3D</h4>
+            <p>Real-time WebGL models</p>
+          </div>
+          <div class="stat-item">
+            <h4>5 Layers</h4>
+            <p>Muscles, Bones, Veins, Organs, Skin</p>
+          </div>
+          <div class="stat-item">
+            <h4>OctSem AI</h4>
+            <p>Context-aware explanations</p>
+          </div>
+          <div class="stat-item">
+            <h4>MBBS Ready</h4>
+            <p>Reviewed clinical anatomy</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Real-time 3D Preview Teaser -->
+      <div class="hero-visual">
+        <div class="atlas-preview-card">
+          <div id="hero-canvas-container" class="preview-canvas-container"></div>
+          
+          <div class="preview-overlay">
+            <div>
+              <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-blue);">Interactive 3D Preview</p>
+              <h4 style="font-size: 0.95rem; font-weight: 600;">Human Male & Female Atlases</h4>
+            </div>
+            <div class="preview-badge-gender">
+              <a href="atlas.html?model=male" class="badge badge-blue"><i class="fa-solid fa-mars"></i> Male</a>
+              <a href="atlas.html?model=female" class="badge badge-pink"><i class="fa-solid fa-venus"></i> Female</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform Features Grid -->
+    <section id="features" class="features-section">
+      <div class="section-header">
+        <span class="badge badge-blue" style="margin-bottom: 12px;">Core Capabilities</span>
+        <h2>Designed for Deep Anatomical Mastery</h2>
+        <p>Replace static textbook diagrams with interactive 3D spatial models and an AI learning assistant that answers your follow-up questions.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="glass-card feature-box">
+          <div class="feature-icon-wrapper"><i class="fa-solid fa-person"></i></div>
+          <h3>Male & Female Atlases</h3>
+          <p>Seamlessly toggle between complete male and female 3D anatomical models featuring distinct reproductive systems and realistic body proportions.</p>
+        </div>
+
+        <div class="glass-card feature-box">
+          <div class="feature-icon-wrapper"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>5-Layer Visibility Controls</h3>
+          <p>Independently show or hide Skin, Muscles & Tendons, Veins & Arteries, Skeletal Bones, and Internal Visceral Organs.</p>
+        </div>
+
+        <div class="glass-card feature-box">
+          <div class="feature-icon-wrapper"><i class="fa-solid fa-crosshairs"></i></div>
+          <h3>Interactive 3D Selection</h3>
+          <p>Click any organ, muscle belly, or bone to highlight it with electric blue glow, view reviewed clinical data, and inspect its boundaries.</p>
+        </div>
+
+        <div class="glass-card feature-box">
+          <div class="feature-icon-wrapper"><i class="fa-solid fa-brain"></i></div>
+          <h3>Context-Aware OctSem AI</h3>
+          <p>Ask anatomy questions with your currently selected structure injected as context. Receive structured physiological and surgical explanations.</p>
+        </div>
+
+        <div class="glass-card feature-box">
+          <div class="feature-icon-wrapper"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+          <h3>Exploded View Mode</h3>
+          <p>Smoothly separate body layers radially to inspect deep anatomical relationships, vessels, and nerves without visual occlusion.</p>
+        </div>
+
+        <div class="glass-card feature-box">
+          <div class="feature-icon-wrapper"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Learning Mode & Quizzes</h3>
+          <p>Reinforce your medical knowledge with structured identification challenges and system-based multiple-choice anatomy quizzes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Anatomical Models Comparison Showcase -->
+    <section id="models" class="showcase-section">
+      <div class="showcase-container">
+        <div class="section-header">
+          <span class="badge badge-purple" style="margin-bottom: 12px;">Anatomical Accuracy</span>
+          <h2>Male and Female Ecorche Models</h2>
+          <p>Faithfully modeled after rigorous anatomical atlases with detailed muscle striations, glistening white tendons, and true visceral positions.</p>
+        </div>
+
+        <div class="models-split-card">
+          <!-- Male Model Showcase -->
+          <div class="model-card-item">
+            <img src="./assets/images/male_atlas_reference.jpg" alt="Male Anatomical Atlas Reference">
+            <div class="model-card-info">
+              <div>
+                <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 4px;">Human Male Atlas</h3>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Full musculoskeletal, vascular, visceral, and male reproductive anatomy.</p>
+              </div>
+              <a href="atlas.html?model=male" class="btn btn-primary"><i class="fa-solid fa-cube"></i> Explore Male 3D</a>
+            </div>
+          </div>
+
+          <!-- Female Model Showcase -->
+          <div class="model-card-item">
+            <img src="./assets/images/female_atlas_reference.jpg" alt="Female Anatomical Atlas Reference">
+            <div class="model-card-info">
+              <div>
+                <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 4px;">Human Female Atlas</h3>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Feminine musculoskeletal contours, mammary glands, and pelvic uterus/ovary structures.</p>
+              </div>
+              <a href="atlas.html?model=female" class="btn btn-primary" style="background: linear-gradient(135deg, #db2777 0%, #f472b6 100%);"><i class="fa-solid fa-cube"></i> Explore Female 3D</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Individual 3D Structures Gallery -->
+    <section id="gallery" class="structures-gallery-section">
+      <div class="section-header">
+        <span class="badge badge-green" style="margin-bottom: 12px;">Segmented 3D Assets</span>
+        <h2>Individual 3D Anatomical Structures</h2>
+        <p>In addition to complete full-body models, inspect individual organs, bones, veins, and muscle groups in 360-degree isolation.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="glass-card gallery-card" onclick="window.location.href='atlas.html?select=heart'">
+          <div class="gallery-card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h4>Heart (Cor)</h4>
+          <p>Chambers, aortic arch, cardiac muscle</p>
+        </div>
+
+        <div class="glass-card gallery-card" onclick="window.location.href='atlas.html?select=brain'">
+          <div class="gallery-card-icon"><i class="fa-solid fa-brain"></i></div>
+          <h4>Brain & Cerebellum</h4>
+          <p>Cerebral hemispheres, brainstem</p>
+        </div>
+
+        <div class="glass-card gallery-card" onclick="window.location.href='atlas.html?select=lungs'">
+          <div class="gallery-card-icon"><i class="fa-solid fa-lungs"></i></div>
+          <h4>Lungs & Trachea</h4>
+          <p>Pulmonary lobes, bronchial tree</p>
+        </div>
+
+        <div class="glass-card gallery-card" onclick="window.location.href='atlas.html?select=liver'">
+          <div class="gallery-card-icon"><i class="fa-solid fa-disease"></i></div>
+          <h4>Liver (Hepar)</h4>
+          <p>Right/left lobes, hepatic parenchyma</p>
+        </div>
+
+        <div class="glass-card gallery-card" onclick="window.location.href='atlas.html?select=uterus'">
+          <div class="gallery-card-icon"><i class="fa-solid fa-venus"></i></div>
+          <h4>Uterus & Ovaries</h4>
+          <p>Fundus, fallopian tubes, ovarian fossa</p>
+        </div>
+
+        <div class="glass-card gallery-card" onclick="window.location.href='atlas.html?select=pectoralis_major'">
+          <div class="gallery-card-icon"><i class="fa-solid fa-dumbbell"></i></div>
+          <h4>Pectoralis Major</h4>
+          <p>Clavicular & sternal muscle heads</p>
+        </div>
+
+        <div class="glass-card gallery-card" onclick="window.location.href='atlas.html?select=rectus_abdominis'">
+          <div class="gallery-card-icon"><i class="fa-solid fa-bars"></i></div>
+          <h4>Rectus Abdominis</h4>
+          <p>8-segment bellies, linea alba</p>
+        </div>
+
+        <div class="glass-card gallery-card" onclick="window.location.href='atlas.html?select=cranium'">
+          <div class="gallery-card-icon"><i class="fa-solid fa-skull"></i></div>
+          <h4>Cranium & Mandible</h4>
+          <p>Braincase, facial skeleton, jawbone</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OctSem AI Assistant Section -->
+    <section id="octsem" class="features-section" style="background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.08) 0%, transparent 70%);">
+      <div class="section-header">
+        <span class="badge badge-blue" style="margin-bottom: 12px;">Artificial Intelligence</span>
+        <h2>Meet OctSem AI — Your Dedicated Anatomy Mentor</h2>
+        <p>No more guessing what an anatomical Latin term means or flipping between pages. Ask OctSem AI with one click from the 3D model.</p>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto; background: var(--bg-surface-elevated); border: 1px solid var(--border-glass-bright); border-radius: var(--radius-xl); padding: 36px; box-shadow: var(--shadow-lg);">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 24px; border-bottom: 1px solid var(--border-glass); padding-bottom: 16px;">
+          <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(56, 189, 248, 0.2); display: flex; align-items: center; justify-content: center; color: var(--accent-blue); font-size: 1.3rem;">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 700;">OctSem AI Assistant</h3>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Powered by NVIDIA Nemotron & Reviewed Medical Knowledge</p>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="background: rgba(56, 189, 248, 0.1); border-left: 3px solid var(--accent-blue); padding: 12px 16px; border-radius: 4px; font-size: 0.9rem;">
+            <strong>Context Loaded:</strong> Heart (Cor) — Cardiovascular System
+          </div>
+          <div style="background: rgba(255, 255, 255, 0.03); padding: 16px; border-radius: var(--radius-md); font-size: 0.9rem; line-height: 1.6; color: var(--text-secondary);">
+            <p><strong style="color: #ffffff;">Student:</strong> <em>"Explain the blood flow path through the four chambers."</em></p>
+            <div style="margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
+              <p><strong style="color: var(--accent-blue);">OctSem AI:</strong> Deoxygenated blood returns from the body through the <strong>Superior & Inferior Vena Cava</strong> into the <strong>Right Atrium</strong>, crosses the tricuspid valve into the <strong>Right Ventricle</strong>, and is pumped via the pulmonary artery to the lungs. Oxygenated blood returns through pulmonary veins into the <strong>Left Atrium</strong>, passes through the bicuspid (mitral) valve into the thick-walled <strong>Left Ventricle</strong>, and is ejected into the <strong>Aorta</strong> for systemic circulation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 24px; text-align: center;">
+          <a href="atlas.html" class="btn btn-primary" style="padding: 12px 28px;">
+            <i class="fa-solid fa-comments"></i> Start Learning with OctSem AI
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="landing-footer">
+    <div class="footer-content">
+      <div class="footer-branding">
+        <img src="./assets/logo/humannova_logo.png" alt="HumanNova Logo" style="height: 52px; width: auto;">
+        <div>
+          <h3 style="font-size: 1.1rem; font-weight: 700; color: #ffffff;">HumanNova</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">AI-Powered Interactive 3D Human Atlas Platform</p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 20px;">
+        <a href="atlas.html" class="btn btn-secondary"><i class="fa-solid fa-cube"></i> Open 3D Atlas</a>
+        <a href="#features" class="btn btn-secondary"><i class="fa-solid fa-circle-info"></i> Documentation</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 HumanNova Platform. Developed by <strong>Mohd. Almaaz Riyaz</strong>. Designed for MBBS & Allied Health Anatomy Learners.</p>
+      <p style="color: var(--accent-blue);">Educational Technology Platform</p>
+    </div>
+  </footer>
+
+  <!-- Vendor Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="./js/home.js"></script>
+</body>
+</html>

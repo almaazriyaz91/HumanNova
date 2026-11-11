@@ -1,0 +1,84 @@
+{
+  "quizzes": [
+    {
+      "id": "q1",
+      "system": "Cardiovascular System",
+      "question": "Which chamber of the heart pumps oxygen-rich blood into the aorta for systemic circulation?",
+      "options": ["Right Atrium", "Right Ventricle", "Left Atrium", "Left Ventricle"],
+      "correct_answer": 3,
+      "explanation": "The left ventricle receives oxygenated blood from the left atrium through the bicuspid (mitral) valve and pumps it at high pressure through the aortic valve into the ascending aorta."
+    },
+    {
+      "id": "q2",
+      "system": "Muscular System",
+      "question": "Which muscle is primarily responsible for flexing the elbow while the forearm is in a mid-pronated ('handshake') position?",
+      "options": ["Biceps Brachii", "Brachioradialis", "Triceps Brachii", "Coracobrachialis"],
+      "correct_answer": 1,
+      "explanation": "The brachioradialis flexes the elbow joint most effectively when the forearm is semi-pronated, whereas the biceps brachii functions most effectively in full supination."
+    },
+    {
+      "id": "q3",
+      "system": "Skeletal System",
+      "question": "What type of bone is the patella (kneecap) classified as anatomically?",
+      "options": ["Long bone", "Flat bone", "Sesamoid bone", "Irregular bone"],
+      "correct_answer": 2,
+      "explanation": "The patella is the largest sesamoid bone in the human body, developing inside the tendon of the quadriceps femoris muscle to increase mechanical leverage."
+    },
+    {
+      "id": "q4",
+      "system": "Digestive System",
+      "question": "In which anatomical quadrant is the human liver primarily located?",
+      "options": ["Right Upper Quadrant (RUQ)", "Left Upper Quadrant (LUQ)", "Right Lower Quadrant (RLQ)", "Left Lower Quadrant (LLQ)"],
+      "correct_answer": 0,
+      "explanation": "The liver is situated primarily in the right upper quadrant (right hypochondriac and epigastric regions), sheltered under the lower ribcage and diaphragm."
+    },
+    {
+      "id": "q5",
+      "system": "Reproductive System",
+      "question": "At which specific anatomical site does fertilization of the ovum by sperm typically take place?",
+      "options": ["Endometrial cavity", "Cervical canal", "Ampulla of the fallopian tube", "Ovarian cortex"],
+      "correct_answer": 2,
+      "explanation": "Fertilization typically occurs in the ampulla, which is the widest and longest section of the fallopian (uterine) tube."
+    },
+    {
+      "id": "q6",
+      "system": "Nervous System",
+      "question": "Which part of the brain is primarily responsible for motor coordination, balance, and fine procedural motor learning?",
+      "options": ["Cerebrum", "Cerebellum", "Hypothalamus", "Medulla Oblongata"],
+      "correct_answer": 1,
+      "explanation": "The cerebellum processes sensory inputs from muscles, joints, and vestibular apparatus to calibrate and coordinate smooth voluntary motor movements."
+    },
+    {
+      "id": "q7",
+      "system": "Muscular System",
+      "question": "What is the central fibrous midline band that divides the left and right rectus abdominis bellies?",
+      "options": ["Inguinal ligament", "Linea alba", "Transversalis fascia", "Iliotibial tract"],
+      "correct_answer": 1,
+      "explanation": "The linea alba ('white line') is formed by the fusion of the aponeuroses of the external oblique, internal oblique, and transversus abdominis muscles."
+    },
+    {
+      "id": "q8",
+      "system": "Urinary System",
+      "question": "Why is the right kidney positioned slightly more inferiorly than the left kidney in the retroperitoneum?",
+      "options": ["Presence of the spleen", "Anterior curvature of the lumbar lordosis", "Downward displacement by the right lobe of the liver", "Space required by the ascending colon"],
+      "correct_answer": 2,
+      "explanation": "The bulk of the large right lobe of the liver displaces the right kidney slightly downward compared to the left kidney."
+    },
+    {
+      "id": "q9",
+      "system": "Cardiovascular System",
+      "question": "What is the longest superficial vein in the human body, commonly harvested for coronary artery bypass grafting?",
+      "options": ["Cephalic vein", "Basilic vein", "Great saphenous vein", "Femoral vein"],
+      "correct_answer": 2,
+      "explanation": "The great saphenous vein runs superficially from the dorsal venous arch of the foot all the way up the medial aspect of the leg to empty into the femoral vein."
+    },
+    {
+      "id": "q10",
+      "system": "Skeletal System",
+      "question": "How many pairs of true ribs directly articulate with the sternum via their own costal cartilages?",
+      "options": ["5 pairs", "7 pairs", "10 pairs", "12 pairs"],
+      "correct_answer": 1,
+      "explanation": "Ribs 1 through 7 are 'true ribs' (vertebrosternal ribs) because their costal cartilages attach directly to the sternum. Ribs 8-10 are false, and 11-12 are floating."
+    }
+  ]
+}
