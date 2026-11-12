@@ -193,6 +193,15 @@ def create_sculpted_tube(path_points, radii_list, n_radial=20, close_ends=True, 
     normals = compute_smooth_normals(positions, indices)
     return positions, normals, np.array(texcoords, dtype=np.float32), indices
 
+def create_cylinder(r_top, r_bot, height, n_radial=12, offset=(0,0,0)):
+    """Simple tapered cylinder (cone frustum) standing along Y-axis."""
+    path = [
+        [offset[0], offset[1] - height/2, offset[2]],
+        [offset[0], offset[1] + height/2, offset[2]],
+    ]
+    radii = [r_bot, r_top]
+    return create_sculpted_tube(path, radii, n_radial=n_radial, close_ends=True)
+
 def create_muscle_belly(p_origin, p_insertion, belly_radii=(0.045, 0.035), tendon_ratio=0.18, n_radial=20, n_sections=16, curve_bend=(0, 0, 0)):
     """
     Generates an anatomically sculpted muscle with realistic spindle shape (fusiform or bipennate),
