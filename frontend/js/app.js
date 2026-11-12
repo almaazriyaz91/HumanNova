@@ -163,13 +163,22 @@ function setupToolbarControls() {
 
 function captureScreenshot() {
   const renderer = AtlasViewer.getRenderer();
-  if (!renderer) return;
+  const scene    = AtlasViewer.getScene();
+  const camera   = AtlasViewer.getCamera();
+  if (!renderer || !scene || !camera) return;
 
-  const dataURL = renderer.domElement.toDataURL("image/png");
-  const link = document.createElement("a");
-  link.download = `HumanNova_${AtlasModelLoader.getCurrentGender()}_anatomy.png`;
-  link.href = dataURL;
+  // Temporarily boost pixel ratio for a high-resolution export
+  const normalPixelRatio = Math.min(window.devicePixelRatio, 2.5);
+  renderer.setPixelRatio(window.devicePixelRatio * 2);
+  renderer.render(scene, camera);
+
+  const link = document.createElement('a');
+  link.download = 'humannova-' + AtlasModelLoader.getCurrentGender() + '-anatomy.png';
+  link.href = renderer.domElement.toDataURL('image/png', 1.0);
   link.click();
+
+  // Restore normal pixel ratio
+  renderer.setPixelRatio(normalPixelRatio);
 }
 
 function showLoadingScreen(show, text = "Loading 3D Anatomy Model...") {
